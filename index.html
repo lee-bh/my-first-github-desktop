@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>흔들리는 오타쿠의 밤 - 90년대 애니메이션 팬사이트</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <!-- Firebase 설정 -->
+    <script src="firebase-config.js"></script>
+    <!-- 공지사항 관련 스크립트 -->
+    <script src="notices.js"></script>
 </head>
 <body>
     <div class="container">
@@ -27,6 +34,21 @@
                 <h2>환영합니다!</h2>
                 <p>이 사이트는 90년대 애니메이션을 사랑하는 모든 분들을 위한 공간입니다.</p>
                 <div class="blink">★ 최신 업데이트 ★</div>
+            </section>
+
+            <section id="notices">
+                <h2>공지사항</h2>
+                <div id="notices-container" class="notices-container"></div>
+                <!-- 관리자용 공지사항 작성 폼 -->
+                <div id="notice-form" class="notice-form" style="display: none;">
+                    <h3>공지사항 작성</h3>
+                    <form>
+                        <input type="text" id="notice-title" placeholder="제목">
+                        <textarea id="notice-content" placeholder="내용"></textarea>
+                        <button type="submit">등록</button>
+                    </form>
+                </div>
+                <button onclick="showNoticeForm()" class="admin-button">공지사항 작성</button>
             </section>
 
             <section id="featured">

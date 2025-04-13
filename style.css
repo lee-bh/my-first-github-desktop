@@ -140,4 +140,86 @@ footer {
 footer p {
     margin: 5px 0;
     color: #000;
+}
+
+/* 공지사항 스타일 */
+.notices-container {
+    margin-top: 20px;
+}
+
+.notice-item {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.notice-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ff00ff;
+    padding-bottom: 5px;
+}
+
+.notice-title {
+    color: #ff00ff;
+    font-weight: bold;
+}
+
+.notice-date {
+    color: #00ffff;
+    font-size: 0.9em;
+}
+
+.notice-content {
+    color: #fff;
+    line-height: 1.6;
+}
+
+.notice-form {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin-top: 20px;
+    border: 1px solid #ff00ff;
+}
+
+.notice-form h3 {
+    color: #00ffff;
+    margin-top: 0;
+}
+
+.notice-form input,
+.notice-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    border: 1px solid #ff00ff;
+    color: #fff;
+}
+
+.notice-form button {
+    background-color: #ff00ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.notice-form button:hover {
+    background-color: #00ffff;
+}
+
+.admin-button {
+    background-color: #ff00ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.admin-button:hover {
+    background-color: #00ffff;
 } 

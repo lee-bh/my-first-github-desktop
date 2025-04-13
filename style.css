@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+body {
+    font-family: 'DotGothic16', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://i.imgur.com/8ZXT8.gif');
+    background-repeat: repeat;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #ff00ff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #fff;
+    text-shadow: 2px 2px #ff00ff;
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.subtitle {
+    color: #00ffff;
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navigation a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #000;
+    border: 1px solid #ff00ff;
+}
+
+.navigation a:hover {
+    background-color: #ff00ff;
+    color: #000;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #00ffff;
+}
+
+h2 {
+    color: #00ffff;
+    border-bottom: 2px solid #ff00ff;
+    padding-bottom: 5px;
+}
+
+.blink {
+    animation: blink 1s infinite;
+    color: #ff00ff;
+    text-align: center;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.anime-card {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border: 1px solid #00ffff;
+    text-align: center;
+}
+
+.anime-card h3 {
+    color: #ff00ff;
+    margin-top: 0;
+}
+
+.guestbook {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #000;
+    border: 1px solid #ff00ff;
+    color: #fff;
+}
+
+button {
+    background-color: #ff00ff;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-family: 'DotGothic16', sans-serif;
+}
+
+button:hover {
+    background-color: #00ffff;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #ff00ff, #00ffff);
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+    color: #000;
+} 
